@@ -13,20 +13,22 @@ Three different frontend API calls for data fetching (list of products) with rea
 Note: Open source mock backend APIs from http://dummmyjson.com have been used for this purpose.
 
 ## Basic List:
+![basic](https://github.com/user-attachments/assets/9ae4bc05-bb2f-4e56-a510-a8a4cdaae1b0)
 
-![basic](https://github.com/user-attachments/assets/215e080d-95c1-4310-a35e-3d096d254afb)
 
 ## Paginated List
+![paginated1](https://github.com/user-attachments/assets/0c2d9ca0-59dc-4ed7-b01f-5628e1da68fa)
 
-![paginated1](https://github.com/user-attachments/assets/f38f0c20-81d3-41f5-8b12-4e14131ef75e)
 
-![paginated2](https://github.com/user-attachments/assets/59dec91c-d6e4-4fcb-8538-def1e91e1cc4)
+![paginated2](https://github.com/user-attachments/assets/1fd4f6d8-fd01-42c1-bbc5-e88e14d1ea73)
+
 
 ## Infinite Loading
+![infinite1](https://github.com/user-attachments/assets/a7125860-70d0-4640-bde2-77fa61dd8f2c)
 
-![infinite1](https://github.com/user-attachments/assets/75425ca1-c18a-4a37-a1e1-5b81d74527d1)
 
-![infinite2](https://github.com/user-attachments/assets/6f98ab67-c347-4a94-a5d6-c0e8d5a08983)
+![infinite2](https://github.com/user-attachments/assets/1e82e81a-713c-4ae8-8eb6-b967915a7498)
+
 
 ## Techstack/Tools used
 
@@ -36,3 +38,7 @@ Note: Open source mock backend APIs from http://dummmyjson.com have been used fo
 - Typescript
 - Tailwind CSS
 - Mock backend API - http://dummyjson.com
+
+Note: Some of the UIs are used as just placeholders with limited implementation, they are out of the scope of this project.
+
+  
