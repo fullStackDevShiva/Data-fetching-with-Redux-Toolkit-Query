@@ -3,7 +3,7 @@ import Home from "./pages/AppHome";
 import ProductDetails from "./pages/ProductDetails";
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <div className="App page-layout">
@@ -14,6 +14,6 @@ function App() {
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

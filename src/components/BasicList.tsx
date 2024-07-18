@@ -1,4 +1,3 @@
-import React from "react";
 import { useGetAllProductsQuery } from "../redux/features/apiSlice";
 import { Product } from "../types/productTypes";
 import ProductCardSm from "./ProductCardSm";
@@ -14,7 +13,8 @@ const BasicList = () => {
 
   if (isError) return <div>An error has occurred!</div>;
   if (isLoading) return <div>Loading...</div>;
-  // console.log(data);
+
+  console.dir(data);
 
   return (
     <div className="product-container w-full">
@@ -23,11 +23,8 @@ const BasicList = () => {
       {data && data.products?.length > 0 && (
         <div className="product-list w-full grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-3 my-4">
           {data.products.map((product: Product) => {
-            return (
-              <React.Fragment key={product.id}>
-                <ProductCardSm product={product} />
-              </React.Fragment>
-            );
+            // using ProductCardSm component to display a single product and iterate
+            return <ProductCardSm product={product} key={product.id} />;
           })}
         </div>
       )}

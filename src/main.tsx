@@ -7,6 +7,7 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
+    {/* to integrate the store using redux provider */}
     <Provider store={store}>
       <App />
     </Provider>

@@ -2,19 +2,19 @@ import { useNavigate } from "react-router-dom";
 import { Product } from "../types/productTypes";
 import Rating from "./Rating";
 
-// Large card component to display a single product
+// large card component to display a single product details
 const ProductCardBg = ({ product }: { product: Product }) => {
   const navigate = useNavigate();
   return (
     <div className="flex h-auto mb-2">
-      <div className="card-left h-full w-1/3 items-center p-2">
+      <div className="card-left items-center p-2 h-full w-1/3">
         <img
           src="../product1.jpeg"
           alt="img"
           className="object-cover w-full h-full relative self-center bg-white rounded-xl"
         />
       </div>
-      <div className="card-right h-full w-2/3 p-4 items-center text-left">
+      <div className="card-right p-4 items-center text-left h-full w-2/3">
         <div className="product-title mb-2">
           <p className="text-slate-900 font-bold text-2xl">
             #{product.brand}-{product.title} - {product.stock} in stock -{" "}

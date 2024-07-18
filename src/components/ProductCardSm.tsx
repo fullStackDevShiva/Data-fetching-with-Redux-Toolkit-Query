@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Product } from "../types/productTypes";
 import Rating from "./Rating";
 
-// Small square shaped card component to display a single product
+// small card component to display a single product in a list
 const ProductCardSm = ({ product }: { product: Product }) => {
   return (
     <div className="card flex flex-col text-center items-center">
@@ -18,7 +18,7 @@ const ProductCardSm = ({ product }: { product: Product }) => {
           #{product.title} -{" "}
           {product?.discountPercentage >= 1
             ? // ? `${Math.round(product.discountPercentage)}% discount`
-              `${Math.ceil(product.discountPercentage / 5) * 5}% discount` // rounded off to the next multiple of 5 to make it look good
+              `${Math.ceil(product.discountPercentage / 5) * 5}% discount` // rounded off to the next multiple of 5 to make it look presentable
             : "fixed price"}{" "}
           - {product.stock} left only
         </p>

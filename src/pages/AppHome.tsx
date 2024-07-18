@@ -1,12 +1,12 @@
 import { useState } from "react";
 import BasicList from "../components/BasicList";
 import PaginatedList from "../components/PaginatedList";
-import InfiniteScroll from "../components/InfiniteScroll";
+import InfiniteList from "../components/InfiniteList";
 
-function Home() {
+const Home = () => {
   const [displayFlag, setDisplayFlag] = useState<
-    "Basic" | "Paginated" | "Infinite"
-  >("Basic"); // State to control data fetching
+    "_BASIC_" | "_PAGINATED_" | "_INFINITE_"
+  >("_BASIC_"); // state to control list display
 
   return (
     <div className="home-page w-full">
@@ -14,37 +14,37 @@ function Home() {
       <div className="btn-group w-full mt-3 mb-4 text-center">
         <button
           className="btn btn-small btn-green-outline m-1"
-          onClick={() => setDisplayFlag("Basic")}
-          disabled={displayFlag === "Basic"}
+          onClick={() => setDisplayFlag("_BASIC_")}
+          disabled={displayFlag === "_BASIC_"}
         >
-          Basic list
+          Basic List
         </button>
         <button
           className="btn btn-small btn-green-outline m-1"
-          onClick={() => setDisplayFlag("Paginated")}
-          disabled={displayFlag === "Paginated"}
+          onClick={() => setDisplayFlag("_PAGINATED_")}
+          disabled={displayFlag === "_PAGINATED_"}
         >
-          Paginated list
+          Paginated List
         </button>
 
         <button
           className="btn btn-small btn-green-outline m-1"
-          onClick={() => setDisplayFlag("Infinite")}
-          disabled={displayFlag === "Infinite"}
+          onClick={() => setDisplayFlag("_INFINITE_")}
+          disabled={displayFlag === "_INFINITE_"}
         >
-          Infinite list
+          Infinite List
         </button>
       </div>
 
       <div className="product-list-sec w-full text-center">
-        {/* Rendering the product lists in the AppHome page instead of using
+        {/* Rendering all three types of lists in the AppHome page instead of using
         separate routes for them */}
-        {displayFlag === "Basic" && <BasicList />}
-        {displayFlag === "Paginated" && <PaginatedList />}
-        {displayFlag === "Infinite" && <InfiniteScroll />}
+        {displayFlag === "_BASIC_" && <BasicList />}
+        {displayFlag === "_PAGINATED_" && <PaginatedList />}
+        {displayFlag === "_INFINITE_" && <InfiniteList />}
       </div>
     </div>
   );
-}
+};
 
 export default Home;

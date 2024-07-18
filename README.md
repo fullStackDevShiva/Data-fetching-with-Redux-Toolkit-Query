@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+## Data Fetching With Redux Toolkit Query (RTK Query)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This small project primarily includes the setup and use of Redux Toolkit for advanced data fetching with real world scenarios.
 
-Currently, two official plugins are available:
+## Functionalities
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Three different frontend API calls for data fetching (list of products) with real world scenarios.
 
-## Expanding the ESLint configuration
+1. Basic query - to fetch all products at once and list them
+2. Paginated query - to enable pagination with the list
+3. Infinite query - to enable infinite loading with the list
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Note: Open source mock backend APIs from http://dummmyjson.com have been used for this purpose.
 
-- Configure the top-level `parserOptions` property like this:
+## Basic List:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+![basic](https://github.com/user-attachments/assets/215e080d-95c1-4310-a35e-3d096d254afb)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Paginated List
+
+![paginated1](https://github.com/user-attachments/assets/f38f0c20-81d3-41f5-8b12-4e14131ef75e)
+
+![paginated2](https://github.com/user-attachments/assets/59dec91c-d6e4-4fcb-8538-def1e91e1cc4)
+
+## Infinite Loading
+
+![infinite1](https://github.com/user-attachments/assets/75425ca1-c18a-4a37-a1e1-5b81d74527d1)
+
+![infinite2](https://github.com/user-attachments/assets/6f98ab67-c347-4a94-a5d6-c0e8d5a08983)
+
+## Techstack/Tools used
+
+- Redux Toolkit
+- React
+- Vite
+- Typescript
+- Tailwind CSS
+- Mock backend API - http://dummyjson.com
