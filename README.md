@@ -10,7 +10,7 @@ Three different frontend API calls for data fetching (list of products) with rea
 2. Paginated query - to enable pagination with the list
 3. Infinite query - to enable infinite loading with the list
 
-Note: Open source mock backend APIs from http://dummmyjson.com have been used for this purpose.
+Note: Open source mock backend APIs from http://dummyjson.com have been used for this purpose.
 
 ## Basic List:
 ![basic](https://github.com/user-attachments/assets/9ae4bc05-bb2f-4e56-a510-a8a4cdaae1b0)
