@@ -2,6 +2,15 @@
 
 This small project primarily includes the setup and use of Redux Toolkit for advanced data fetching with real world scenarios.
 
+## Techstack/Tools used
+
+- Redux Toolkit
+- React
+- Vite
+- Typescript
+- Tailwind CSS
+- Mock backend API - http://dummyjson.com
+
 ## Functionalities
 
 Three different frontend API calls for data fetching (list of products) with real world scenarios.
@@ -10,7 +19,7 @@ Three different frontend API calls for data fetching (list of products) with rea
 2. Paginated query - to enable pagination with the list
 3. Infinite query - to enable infinite loading with the list
 
-Note: Open source mock backend APIs from http://dummmyjson.com have been used for this purpose.
+Note: Open source mock backend APIs from http://dummyjson.com have been used for this purpose.
 
 ## Basic List:
 
@@ -27,14 +36,5 @@ Note: Open source mock backend APIs from http://dummmyjson.com have been used fo
 ![infinite1](https://github.com/user-attachments/assets/a7125860-70d0-4640-bde2-77fa61dd8f2c)
 
 ![infinite2](https://github.com/user-attachments/assets/1e82e81a-713c-4ae8-8eb6-b967915a7498)
-
-## Techstack/Tools used
-
-- Redux Toolkit
-- React
-- Vite
-- Typescript
-- Tailwind CSS
-- Mock backend API - http://dummyjson.com
 
 Note: Some of the UIs are used as just placeholders with limited implementation, they are out of the scope of this project.
