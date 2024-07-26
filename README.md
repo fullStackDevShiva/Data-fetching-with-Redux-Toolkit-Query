@@ -13,22 +13,20 @@ Three different frontend API calls for data fetching (list of products) with rea
 Note: Open source mock backend APIs from http://dummmyjson.com have been used for this purpose.
 
 ## Basic List:
+
 ![basic](https://github.com/user-attachments/assets/9ae4bc05-bb2f-4e56-a510-a8a4cdaae1b0)
 
-
 ## Paginated List
-![paginated1](https://github.com/user-attachments/assets/0c2d9ca0-59dc-4ed7-b01f-5628e1da68fa)
 
+![paginated1](https://github.com/user-attachments/assets/0c2d9ca0-59dc-4ed7-b01f-5628e1da68fa)
 
 ![paginated2](https://github.com/user-attachments/assets/1fd4f6d8-fd01-42c1-bbc5-e88e14d1ea73)
 
-
 ## Infinite Loading
+
 ![infinite1](https://github.com/user-attachments/assets/a7125860-70d0-4640-bde2-77fa61dd8f2c)
 
-
 ![infinite2](https://github.com/user-attachments/assets/1e82e81a-713c-4ae8-8eb6-b967915a7498)
-
 
 ## Techstack/Tools used
 
@@ -40,5 +38,3 @@ Note: Open source mock backend APIs from http://dummmyjson.com have been used fo
 - Mock backend API - http://dummyjson.com
 
 Note: Some of the UIs are used as just placeholders with limited implementation, they are out of the scope of this project.
-
-  

@@ -23,7 +23,7 @@ const ProductCardSm = ({ product }: { product: Product }) => {
           - {product.stock} left only
         </p>
       </div>
-      <div className="card-bottom w-full flex justify-evenly items-center h-1/6">
+      <div className="card-bottom-top w-full flex justify-evenly items-center h-1/6">
         <Rating rating={product.rating} />
       </div>
       <div className="card-bottom w-full flex justify-evenly items-center h-1/6">

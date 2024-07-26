@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 :root {  
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
+  text-align: center;
   font-weight: 400;
 
   color-scheme: light dark;
@@ -27,11 +28,11 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  /*margin: 0;*/
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  /*min-width: 320px;
+  min-height: 100vh;*/
 }
 
 
@@ -137,7 +138,8 @@ body {
 
 @layer components {
   .card {
-    @apply block p-2 text-left border border-blue-200 border-dashed rounded-2xl bg-white relative;
+    /* @apply block p-2 text-left border border-blue-200 border-dashed rounded-2xl bg-white relative; */
+    @apply block p-2 text-left rounded-2xl bg-white relative;
   }
   .card .info {
     @apply mt-1 text-xs;
